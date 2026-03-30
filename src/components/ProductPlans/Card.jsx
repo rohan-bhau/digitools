@@ -1,7 +1,7 @@
 import React from "react";
 
 const Card = ({ data }) => {
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className="bg-[#f1f1f1] px-5 pt-5 rounded-lg">

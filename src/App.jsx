@@ -5,25 +5,47 @@ import Stats from "./components/Stats/Stats";
 import ProductPlans from "./components/ProductPlans/ProductPlans";
 import axios from "axios";
 import Promotion from "./components/Promotion/Promotion";
+import ProductPricing from "./components/ProductsPricing/ProductPricing";
 
 const fetchProduct = async() => {
   const res = await fetch("/data.json")
   return res.json()
 }
 
+const fetchPricing = async () => {
+  const res = await fetch("/pricingData.json")
+  return res.json()
+}
+
 const App = () => {
   const productPromise = fetchProduct();
+  const pricingPromise = fetchPricing()
+  // console.log(pricingPromise);
+  
+  
   return (
     <div>
       <Navbar></Navbar>
       <Banner></Banner>
       <Stats></Stats>
 
-      <Suspense fallback={<p>Data is loading</p>}>
-      <ProductPlans productPromise={productPromise}></ProductPlans>
+      <Suspense
+        fallback={
+          <span className="loading loading-spinner text-success"></span>
+        }
+      >
+        <ProductPlans productPromise={productPromise}></ProductPlans>
       </Suspense>
 
       <Promotion></Promotion>
+
+      <Suspense
+        fallback={
+          <span className="loading loading-spinner text-success"></span>
+        }
+      >
+        <ProductPricing pricingPromise={pricingPromise}></ProductPricing>
+      </Suspense>
     </div>
   );
 };

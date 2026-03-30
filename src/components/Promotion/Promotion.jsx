@@ -27,7 +27,7 @@ const Promotion = () => {
         description: "Download and start using your premium tools immediately.",
       },
     ];
-    console.log(promotionData);
+    // console.log(promotionData);
     
   return (
     <div className="bg-[#f9fafc]">
