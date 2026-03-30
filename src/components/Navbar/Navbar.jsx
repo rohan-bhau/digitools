@@ -29,19 +29,19 @@ const Navbar = () => {
               className=" menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-32 p-2 shadow"
             >
               <li className="hover:text-orange-500">
-                <a href="./products">Products</a>
+                <a href="#">Products</a>
               </li>
               <li className="hover:text-orange-500">
-                <a href="./features">Features</a>
+                <a href="#">Features</a>
               </li>
               <li className="hover:text-orange-500">
-                <a href="./pricing">Pricing</a>
+                <a href="#">Pricing</a>
               </li>
               <li className="hover:text-orange-500">
-                <a href="./testimonials">Testimonials</a>
+                <a href="#">Testimonials</a>
               </li>
               <li className="hover:text-orange-500">
-                <a href="./faq">FAQ</a>
+                <a href="#">FAQ</a>
               </li>
             </ul>
           </div>
@@ -55,19 +55,19 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className=" menu-horizontal gap-8 px-1">
             <li className="hover:text-orange-500">
-              <a href="./products">Products</a>
+              <a href="#">Products</a>
             </li>
             <li className="hover:text-orange-500">
-              <a href="./features">Features</a>
+              <a href="#">Features</a>
             </li>
             <li className="hover:text-orange-500">
-              <a href="./pricing">Pricing</a>
+              <a href="#">Pricing</a>
             </li>
             <li className="hover:text-orange-500">
-              <a href="./testimonials">Testimonials</a>
+              <a href="#">Testimonials</a>
             </li>
             <li className="hover:text-orange-500">
-              <a href="./faq">FAQ</a>
+              <a href="#">FAQ</a>
             </li>
           </ul>
         </div>
