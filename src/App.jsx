@@ -7,6 +7,7 @@ import axios from "axios";
 import Promotion from "./components/Promotion/Promotion";
 import ProductPricing from "./components/ProductsPricing/ProductPricing";
 import WorkFlow from "./components/Workflow/WorkFlow";
+import Footer from "./components/Footer/Footer";
 
 const fetchProduct = async() => {
   const res = await fetch("/data.json")
@@ -49,6 +50,8 @@ const App = () => {
       </Suspense>
 
       <WorkFlow></WorkFlow>
+
+      <Footer></Footer>
     </div>
   );
 };
