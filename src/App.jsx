@@ -8,6 +8,7 @@ import Promotion from "./components/Promotion/Promotion";
 import ProductPricing from "./components/ProductsPricing/ProductPricing";
 import WorkFlow from "./components/Workflow/WorkFlow";
 import Footer from "./components/Footer/Footer";
+import { useMemo } from "react";
 
 const fetchProduct = async () => {
   const res = await fetch("/data.json");
@@ -22,8 +23,8 @@ const fetchPricing = async () => {
 const App = () => {
   const [cartCount, setCartCount] = useState(0);
   const [cartData, setCartData] = useState([])
-  const productPromise = fetchProduct();
-  const pricingPromise = fetchPricing();
+const productPromise = useMemo(() => fetchProduct(), []);
+const pricingPromise = useMemo(() => fetchPricing(), []);
   // console.log(pricingPromise);
 
   return (

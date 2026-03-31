@@ -1,6 +1,7 @@
 import { use, useState } from 'react';
 import ProductPlan from './ProductPlan'
 import CartData from '../ui/CartData';
+import EmptyCart from '../ui/EmptyCart';
 
 const ProductPlans = ({ productPromise, cartCount, setCartCount, cartData, setCartData }) => {
   const [activeTab, setActiveTab] = useState("products");
@@ -43,7 +44,7 @@ const ProductPlans = ({ productPromise, cartCount, setCartCount, cartData, setCa
       </div>
 
         {activeTab === "products" ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 container mx-auto">
           {productData.map((product, idx) => (
             <ProductPlan
               total={total}
@@ -60,14 +61,16 @@ const ProductPlans = ({ productPromise, cartCount, setCartCount, cartData, setCa
        
         ) : (
           <div>
-            <CartData
+            {
+              cartData.length>0? (<CartData
               total={total}
               setTotal={setTotal}
               cartCount={cartCount}
               setCartCount={setCartCount}
               cartData={cartData}
               setCartData={setCartData}
-            ></CartData>
+            ></CartData>):(<EmptyCart></EmptyCart>)
+            }
           </div>
         )}
       </div>

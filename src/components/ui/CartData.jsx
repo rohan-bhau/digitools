@@ -1,12 +1,17 @@
 import React, { useState } from 'react'
 import Cart from './Cart'
+import { toast } from 'react-toastify'
+// import styled from "styled-components";
+
 
 const CartData = ({setCartCount, cartCount, cartData, setCartData, total, setTotal }) => {
     // console.log(cartData.price);
 
     const checkOutBtn = () => {
         setCartCount(0)
-        setCartData([])
+      setCartData([])
+      setTotal(0)
+      toast.info('Checkout Successfull',{position:'top-center'})
     }
     
   return (

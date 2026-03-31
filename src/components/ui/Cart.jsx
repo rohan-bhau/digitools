@@ -1,4 +1,5 @@
 import React from 'react'
+import { toast } from 'react-toastify';
 
 const Cart = ({ data, total, setTotal, setCartData, cartData, cartCount, setCartCount }) => {
   
@@ -12,7 +13,8 @@ const Cart = ({ data, total, setTotal, setCartData, cartData, cartCount, setCart
     setCartData(filteredData)
     // setTotal(total-selectedData.price)
     setTotal(prev => prev - data.price)
-    setCartCount(prev=>prev-1)
+    setCartCount(prev => prev - 1)
+    toast.error(`${data.name} has been deleted`);
 
   }
   
