@@ -1,10 +1,12 @@
 [
   {
+
     "plan_name": "Starter",
     "tagline": "Perfect for getting started",
     "price": "$0",
     "period": "/Month",
     "most_popular_tag": false,
+    "id":1,
 
     "features": [
       "Access to 10 free tools",
@@ -20,6 +22,7 @@
     "price": "$29",
     "period": "/Month",
     "most_popular_tag": true,
+    "id": 2,
     "features": [
       "Access to all premium tools",
       "Unlimited templates",
@@ -36,7 +39,7 @@
     "price": "$99",
     "period": "/Month",
     "most_popular_tag": false,
-
+    "id": 3,
     "features": [
       "Everything in Pro",
       "Team collaboration",

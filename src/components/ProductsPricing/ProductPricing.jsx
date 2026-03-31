@@ -1,7 +1,8 @@
-import React, { use } from 'react'
+import React, { use, useState } from 'react'
 import PricingCard from './PricingCard';
 
-const ProductPricing = ({ pricingPromise}) => {
+const ProductPricing = ({ pricingPromise }) => {
+  const [activePlan, setActivePlan] = useState(2)
   // console.log(pricingPromise);
   const pricingData = use(pricingPromise);
   // console.log(pricingData);
@@ -21,6 +22,8 @@ const ProductPricing = ({ pricingPromise}) => {
           <PricingCard
             key={idx}
             data={data}
+            activePlan={activePlan}
+            setActivePlan={setActivePlan}
           ></PricingCard>
         ))}
       </div>

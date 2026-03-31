@@ -20,11 +20,11 @@ const ProductPlans = ({ productPromise, cartCount, setCartCount, cartData, setCa
   // }
 
   return (
-    <div className="mt-30 text-center px-7 md:px-14 ">
-      <h2 className="text-3xl md:text-4xl font-bold mb-2 text-black/80">
+    <div className="mt-30 text-center  md:px-14 ">
+      <h2 className="text-3xl md:text-4xl font-bold px-7 mb-2 text-black/80">
         Premium Digital Tools
       </h2>
-      <p className="text-lg text-black/60 mb-4">
+      <p className="text-lg px-7 text-black/60 mb-4">
         Choose from our curated collection of premium digital products designed{" "}
          to boost your productivity and creativity.
       </p>
