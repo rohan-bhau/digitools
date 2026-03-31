@@ -78,7 +78,7 @@ const Navbar = ({cartCount, setCartCount}) => {
           <div className="relative">
             <ShoppingCart className="cursor-pointer hover:text-orange-400" />{" "}
             <p
-              className={`${cartCount === 0 ? "hidden" : ""} absolute -top-3 left-3 bg-red-500 p-1 h-4 w-4 text-xs flex items-center justify-center mx-auto rounded-full`}
+              className={`${cartCount === 0 ? "hidden" : ""} absolute -top-3 left-3 bg-red-500 p-1 text-white h-4 w-4 text-xs flex items-center justify-center mx-auto rounded-full`}
             >
               {cartCount}
             </p>
