@@ -9,7 +9,7 @@ import EndMessage from "./EndMessage";
 const Footer = () => {
   return (
     <div className="bg-[#101727]">
-      <div className="container mx-auto text-white py-20 grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+      <div className="lg:container lg:mx-auto md:px-20 lg:px-0 text-white py-20 grid text-center md:text-left  grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10">
         <Description></Description>
         <Product></Product>
         <Company></Company>

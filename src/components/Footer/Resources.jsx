@@ -2,7 +2,7 @@ import React from 'react'
 
 const Resources = () => {
   return (
-    <div>
+    <div className='mx-auto'>
       <h3 className="text-lg font-semibold mb-4">Resources</h3>
       <ul className="text-md text-white/70 space-y-2 w-fit">
         <li className="hover:text-orange-500">

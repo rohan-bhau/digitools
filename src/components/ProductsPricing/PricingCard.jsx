@@ -5,7 +5,7 @@ const PricingCard = ({ data,}) => {
   // console.log(data.most_popular_tag);
 
   return (
-    <div className="bg-[#f2f2f2] p-6 mb-6 rounded-lg shadow space-y-6 relative flex flex-col justify-between">
+    <div className="bg-[#f2f2f2] p-6 mb-6 rounded-lg shadow space-y-6 relative flex flex-col justify-between transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-purple-400">
       <h2
         className={`absolute -top-3 left-[40%] bg-[#FEF3C6] text-[#BB4D00] font-semibold px-3 py-2 rounded-full ${data.most_popular_tag === false ? "hidden" : ""}`}
       >

@@ -30,13 +30,13 @@ const Promotion = () => {
     // console.log(promotionData);
     
   return (
-    <div className="bg-[#f9fafc]">
-      <div className='container mx-auto py-10'>
-        <div className='text-center'>
+    <div className="bg-[#f9fafc] ">
+      <div className='container mx-auto py-10 '>
+        <div className='text-center px-7 md:px-14'>
           <h2 className='text-2xl font-bold text-black/80 mb-4'>Get Started In 3 Steps</h2>
           <p className='text-md text-black/60 mb-10'>Start using premium digital tools in minutes, not hours.</p>
         </div>
-              <div className='grid grid-cols-3 gap-5'>
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-7 md:px-14'>
                   
                   {promotionData.map(data => {
                       return (

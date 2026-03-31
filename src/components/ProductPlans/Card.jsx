@@ -4,7 +4,7 @@ const Card = ({ data }) => {
   // console.log(data);
 
   return (
-    <div className="bg-[#f1f1f1] px-5 pt-5 rounded-lg">
+    <div className="bg-[#f1f1f1] relative px-5 pt-5 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-red-400">
       <div className=" flex justify-end  right">
         <button className=" bg-gradient-to-r from-[#4F39F6] to-[#9514FA] w-10 h-10 rounded-full ">
           {data.id}
@@ -19,9 +19,7 @@ const Card = ({ data }) => {
       </div>
       <div className="text-center mb-20">
         <h2 className="text-xl font-bold mb-3">{data.title}</h2>
-        <p className="text-md text-black/70">
-          {data.description}
-        </p>
+        <p className="text-md text-black/70">{data.description}</p>
       </div>
     </div>
   );

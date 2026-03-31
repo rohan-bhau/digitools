@@ -22,7 +22,16 @@ const CartData = ({setCartCount, cartCount, cartData, setCartData, total, setTot
       </div>
       <div>
         {cartData.map((data, idx) => (
-          <Cart total={total} setTotal={setTotal} key={idx} data={data} setCartCount={setCartCount} cartCount={cartCount} cartData={cartData} setCartData={setCartData}></Cart>
+          <Cart
+            total={total}
+            setTotal={setTotal}
+            key={idx}
+            data={data}
+            setCartCount={setCartCount}
+            cartCount={cartCount}
+            cartData={cartData}
+            setCartData={setCartData}
+          ></Cart>
         ))}
       </div>
 
@@ -30,9 +39,10 @@ const CartData = ({setCartCount, cartCount, cartData, setCartData, total, setTot
         <p className="text-black/60">Total:</p>
         <p className="font-semibold text-xl">${total}</p>
       </div>
-          <button
-      onClick={checkOutBtn}
-              className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] w-full py-2 rounded-full font-semibold text-white">
+      <button
+        onClick={checkOutBtn}
+        className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] w-full py-2 rounded-full transition-all duration-300 hover:scale-103 hover:shadow-lg font-semibold text-white"
+      >
         Proceed To Checkout
       </button>
     </div>

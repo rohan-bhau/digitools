@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 const SocialLinks = () => {
   return (
-    <div className="text-white space-y-4">
+    <div className="text-white space-y-4 mx-auto">
       <h3 className="text-lg font-semibold">Social Links</h3>
       <div className="flex gap-4">
         <FaInstagram className="hover:text-red-500 cursor-pointer h-6 w-6 p-1 hover:bg-white hover:rounded-full" />

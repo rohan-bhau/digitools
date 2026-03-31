@@ -2,7 +2,7 @@ import React from 'react'
 
 const Product = () => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 mx-auto">
       <h3 className="text-xl font-semibold ">Product</h3>
       <ul className="space-y-2 text-white/70 text-md w-fit">
         <li className="hover:text-orange-500">
